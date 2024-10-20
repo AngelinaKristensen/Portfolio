@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./assets/css/style.css">
-    <script src="./assets/js/script.js" defer></script>
+    <script src="./assets/js/bubble.js" defer></script>
     <link rel="shortcut icon" type="image/x-icon" href="#">
     <title>Angelina Kristensen</title>
 </head>
@@ -17,23 +17,25 @@
             <li><a href="contact.html">Kontakt</a></li>
         </ul>
     </nav>
-    <header>
+    <header class="landingHeader">
+        <div class="bubbles">
+            <div class="bubble1">
+                <p>SEO</p>
+            </div>
+            <div class="bubble2">
+                <p>UX<br>WRITING</p>
+            </div>
+            <div class="bubble3">
+                <p>UX/UI<br>DESIGN</p>
+            </div>
+            <div class="bubble4">
+                <p>OOUX</p>
+            </div>
+        </div>
         <h1 class="name">Angelina<br>Kristensen</h1>
-        <div class="bubble1">
-            <p>OOUX</p>
-        </div>
-        <div class="bubble2">
-            <p>UX WRITING</p>
-        </div>
-        <div class="bubble3">
-            <p>UX/UI DESIGN</p>
-        </div>
-        <div class="bubble4">
-            <p>SEO</p>
-        </div>
-        <img src="./assets/media/img/pfpTransparent.png" alt="">
-        <img src="./assets/media/svg/vectorLeft.svg" alt="">
-        <img src="./assets/media/svg/vectorRight.svg" alt="">
+        <img class="profileImg" src="./assets/media/img/pfpTransparent.png" alt="">
+        <img class="frontVectorLeft" src="./assets/media/svg/vectorLeft.svg" alt="">
+        <img class="frontVectorRight" src="./assets/media/svg/vectorRight.svg" alt="">
     </header>
     <main>
         <section>
@@ -50,9 +52,11 @@
         </section>
     </main>
     <footer>
-        <p>Copyright 2024, Angelina Kristensen</p>
-        <a href="https://www.linkedin.com/in/angelinakristensen/">LinkedIn</a>
-        <a href="https://github.com/AngeKri">Github</a>
+        <p>Copyright 2024 © Angelina Kristensen</p>
+        <div>
+            <a href="https://www.linkedin.com/in/angelinakristensen/" target="_blank">LinkedIn</a>
+            <a href="https://github.com/AngeKri" target="_blank">Github</a>
+        </div>
     </footer>
 </body>
 </html>
