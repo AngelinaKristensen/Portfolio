@@ -19,7 +19,7 @@
 
 
 /*===============================================================================================
-    MAIN STYLING 
+MAIN STYLING 
 ===============================================================================================*/
 
 
@@ -32,6 +32,19 @@ body {
     padding: 0;
     font-family: var(--SS3);
     background-color: var(--CreamWhite);
+}
+
+.skills h2, .focusFront h2, .casesFront h2{
+    font-family: var(--Mont);
+    font-size: 2rem;
+    font-weight: 500;
+    text-align: center;
+    text-transform: uppercase;
+    padding-top: 3rem;
+}
+
+.skills h2, .casesFront h2{
+    color: var(--CreamWhite);
 }
 
 /*===============================================================================================
@@ -174,18 +187,6 @@ body {
 ======================================================================================= */
 
 
-.skills h2, .focusFront h2, .casesFront h2{
-    font-family: var(--Mont);
-    font-size: 2rem;
-    font-weight: 500;
-    text-align: center;
-    text-transform: uppercase;
-    padding-top: 3rem;
-}
-
-.skills h2, .casesFront h2{
-    color: var(--CreamWhite);
-}
 
 .logoText{
     text-align: center;
@@ -249,11 +250,142 @@ body {
    }
 }
 
+/* FOKUS
+======================================================================================= */
+
+.focusFront{
+    padding: 0 2rem 2rem 2rem;
+}
+
+.focusFront div:first-of-type{
+    display: flex;
+}
+
+.focusFront ul{
+    padding: 0;
+}
+
+.focusFront li{
+    list-style: none;
+    font-size: 1.2rem;
+}
+
+.focusFront li:last-child{
+    list-style: none;
+    font-size: 1.2rem;
+    padding: 0 5rem 5rem 5rem;
+}
+
+.focusFront li:first-child{
+    font-family: var(--Mont);
+    font-size: 1.5rem;
+    padding: 5rem 5rem 1rem 5rem;
+}
+
+.divLine{
+    border-left: .15rem solid var(--DarkGreen);
+    height: 20rem;
+}
+
+
 /* CASES
+======================================================================================= */
+
+.casesFront{
+    background-color: var(--DarkGreen);
+    color: var(--CreamWhite);
+}
+
+.caseFront{
+    display: flex;  
+    padding: 8rem;
+    justify-content: space-between;
+}
+
+.caseFront:nth-of-type(2){
+    background-color: var(--DarkerGreen);
+}
+
+.caseFront div:first-child{
+    display: flex;  
+    flex-direction: column;
+}
+
+.casesFront h2{
+    padding-top: 5rem;
+}
+
+.caseFront img{
+    height: 28rem;
+}
+
+.caseFront h3{
+    color: var(--LightGreen);
+    font-size: 2.5rem;
+    padding-bottom: 1rem;
+    font-weight: 500;
+    margin: 0;
+    font-family: var(--Mont);
+}
+
+.caseFront p{
+    margin: 0;
+    font-size: 2rem;
+    font-weight: 300;
+}
+
+.caseFront ul{
+    padding: 2rem 0 0 0;
+}
+
+.caseFront li{
+    margin: 0;
+    list-style: none;
+    font-size: 1.5rem;
+    padding: 1rem 0;
+}
+
+.caseFront li span{
+    font-weight: 700;
+}
+
+.caseBtn{
+    background-color: var(--LightGreen);
+    text-decoration: none;
+    color: var(--DarkerGreen);
+    border-radius: 2.5rem;
+    font-weight: 500;
+    font-size: 1.5rem;
+    padding: .5rem;
+    width: 14rem;
+    text-align: center;
+    margin-top: auto; 
+}
+
+
+/*===============================================================================================
+    CASES
+===============================================================================================*/
+
+
+
+/* CASE GALLERY
+======================================================================================= */
+/* CASE HEADER + TABS
+======================================================================================= */
+/* CASE INDIVIDUAL
 ======================================================================================= */
 
 
 
+
+/*===============================================================================================
+    ABOUT
+===============================================================================================*/
+
+/*===============================================================================================
+    CONTACT 
+===============================================================================================*/
 
 /*===============================================================================================
     NAV 
