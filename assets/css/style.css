@@ -302,11 +302,11 @@ body {
     justify-content: space-between;
 }
 
-.caseFront:nth-of-type(2){
+.caseFront:nth-of-type(even){
     background-color: var(--DarkerGreen);
 }
 
-.case:nth-of-type(2){
+.case:nth-of-type(even){
     background-color: #e9ece5;
 }
 
@@ -820,4 +820,192 @@ footer div a{
 
 footer div a i{
     padding-right: .5rem;
+}
+
+/*===============================================================================================
+    MEDIA QUERIES
+===============================================================================================*/
+
+@media screen and (max-width: 1600px) {    
+    .bubble1{ 
+        width: 9rem;
+    }
+    .bubble2{ 
+        width: 13rem; 
+    }
+    .bubble3{ 
+        width: 14rem;
+    }
+    .bubble4{ 
+        width: 10.5rem;
+    }
+    .bubbles {
+        height: 40vh;
+    }
+
+    .landingHeader{
+        height: 90Vh;
+    }
+    .frontVectorLeft{
+        height: 70%;
+        width: 50rem;    
+    }
+    .frontVectorRight{
+        /* height: 100%; */
+        width: 50rem;   
+    }
+    .profileImg{
+        bottom: 7%;
+        right: 7%;
+        height: 35rem;
+    }
+    .name{
+        font-size: 6rem;
+    }
+
+    .divLine{
+        height: 26rem;
+    }
+
+    .caseHeader{
+        background-color: var(--DarkGreen);
+        padding: 4rem 15rem 2rem 15rem;
+        display: flex;
+        color: var(--CreamWhite);
+        gap: 4rem;
+    }
+    ul.breadcrumb {
+        padding: 2rem 15rem 0 15rem;
+
+    }
+    .caseContent {
+        display: none;
+        padding: 2rem 15rem 8rem 15rem;
+    }
+    .center{
+        padding: 0 10rem;
+    }
+
+
+    .aboutPage{
+        padding: 2rem 20rem 5rem 20rem;
+    }
+
+}
+
+
+@media screen and (max-width: 1400px) {    
+    .bubble1{ 
+        width: 7rem;
+    }
+    .bubble2{ 
+        width: 11rem; 
+    }
+    .bubble3{ 
+        width: 12rem;
+    }
+    .bubble4{ 
+        width: 8.5rem;
+    }
+    .bubbles {
+        height: 40vh;
+    }
+
+    .landingHeader{
+        height: 89.7Vh;
+    }
+    .frontVectorLeft{
+        height: 70%;
+        width: 40rem;    
+    }
+    .frontVectorRight{
+        /* height: 100%; */
+        width: 40rem;   
+    }
+    .profileImg{
+        bottom: 7%;
+        right: 7%;
+        height: 30rem;
+    }
+    .name{
+        font-size: 5rem;
+    }
+
+    .skills h2, .focusFront h2, .casesFront h2{
+        font-size: 1.5rem;
+    }
+    .skillsContainer{
+        font-size: 1rem;
+        padding: 5rem 0;
+    }
+  
+    .focusFront li:last-child{
+        font-size: 1.1rem;
+        padding: 0 4rem 4rem 4rem;
+    }
+    .focusFront li:first-child{
+
+        font-size: 1.2rem;
+        padding: 4rem 4rem 1rem 4rem;
+    }
+    .divLine{
+        height: 24rem;
+    }
+    
+    .caseHeader{
+        padding: 4rem 10rem 2rem 10rem;
+    }
+
+    .caseHeader img{
+        height: 20rem;
+    }
+
+    ul.breadcrumb {
+        padding: 2rem 10rem 0 10rem;
+
+    }
+    .caseContent {
+        display: none;
+        padding: 2rem 10rem 8rem 10rem;
+    }
+    .center{
+        padding: 0 8rem;
+    }
+
+    .casesFront{
+        background-color: var(--DarkGreen);
+        color: var(--CreamWhite);
+    }
+    .caseFront, .case{
+        display: flex;  
+        padding: 8rem;
+        justify-content: space-between;
+    }
+    .caseFront img, .case img{
+        height: 20rem;
+    }
+    .caseFront h3, .case h3{
+        font-size: 2rem;
+        padding-bottom: 1rem;
+    }
+    .caseFront p, .case p{
+        font-size: 1.5rem;
+    }
+    .caseFront ul, .case ul{
+        padding: .5rem 0 0 0;
+    }
+    
+    .caseFront li, .case li{
+        font-size: 1rem;
+    }
+    .Btn{
+        font-size: 1rem;
+        padding: .2rem;
+        width: 10rem;
+    }
+
+    .aboutPage{
+        padding: 2rem 20rem 5rem 20rem;
+    }
+
 }
