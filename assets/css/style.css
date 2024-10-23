@@ -422,12 +422,37 @@ body {
     CASES
 ===============================================================================================*/
 
+ul.breadcrumb {
+    padding: 2rem 20rem 0 20rem;
+    margin: 0;
+    list-style: none;
+    background-color: var(--DarkGreen);
+}
+  
+ul.breadcrumb li {
+    display: inline;
+    font-size: 1.2rem;
+    color: var(--CreamWhite);
+}
+  
+ul.breadcrumb li+li:before {
+    padding: .5rem;
+    color: var(--DarkerGreen);
+    content: "/\00a0";
+}
+  
+ul.breadcrumb li a {
+    color: var(--LightGreen);
+}
+  
+ul.breadcrumb li a:hover {
+    color: var(--CreamWhite);
+}
 
 
 /* CASE HEADER + TABS
 ======================================================================================= */
 
-/* Style the tab */
 .caseTab {
     overflow: hidden;
     background-color: var(--DarkGreen);
@@ -436,33 +461,75 @@ body {
     align-items: center;
 }
 
-/* Style the buttons that are used to open the tab content */
 .caseTab button {
     background-color: inherit;
     font-family: var(--Mont);
     color: var(--CreamWhite);
     text-transform: uppercase;
-    /* float: left; */
+    font-size: 1rem;
     border: none;
     outline: none;
     cursor: pointer;
-    padding: 14px 16px;
+    padding: .8rem 1rem;
     transition: 0.3s;
 }
   
-  /* Change background color of buttons on hover */
 .caseTab button:hover {
     background-color: #173834;
 }
   
-  /* Create an active/current tablink class */
 .caseTab button.active {
     background-color: var(--DarkerGreen);
 }
 
 .caseHeader{
     background-color: var(--DarkGreen);
-    padding: 2rem 20rem;
+    padding: 4rem 20rem 2rem 20rem;
+    display: flex;
+    color: var(--CreamWhite);
+    gap: 4rem;
+}
+
+.caseHeader h1, .caseHeader h2{
+    color: var(--LightGreen);
+    margin: 0;
+}
+
+.caseHeader h2{
+    padding: 1.5rem 0 .5rem 0;
+}
+
+.caseHeader h1 + p{
+    padding-bottom: .5rem;
+    font-size: 1.2rem;
+    font-weight: 300;
+}
+
+.caseHeader img{
+    height: 25rem;
+}
+
+.caseHeader .Btn{
+    margin-top: 2rem;
+}
+
+.caseHeader p{
+    margin: 0;
+    font-size: 1.2rem;
+}
+
+.demo{
+    display: block;
+    background-color: var(--LightGreen);
+    text-decoration: none;
+    color: var(--DarkerGreen);
+    border-radius: 2.5rem;
+    font-weight: 500;
+    font-size: 1.5rem;
+    padding: .5rem 3rem;
+    width: 14rem;
+    text-align: center;
+    margin-top: 3rem;
 }
   
 
@@ -470,10 +537,52 @@ body {
 ======================================================================================= */
 
 .caseContent {
-  display: none;
-  padding: 2rem 20rem;
+    display: none;
+    padding: 2rem 20rem 8rem 20rem;
 }
 
+.caseContent h3{
+    font-family: var(--Mont);
+    text-transform: uppercase;
+    margin: 0;
+    padding: 2rem 0 .5rem 0;
+    font-size: 1.6rem;
+}
+
+.caseContent p, .caseContent li{
+    font-size: 1.2rem;
+    margin: 0;
+}
+
+.caseContent li{
+    padding: .5rem 0;
+}
+
+.dark{
+    background-color: var(--DarkGreen);
+}
+
+.dark h3, .dark p{
+    color: var(--CreamWhite);
+}
+
+.caseContent img{
+    padding: 1rem 0;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 80%;
+}
+
+.center{
+    padding: 0 15rem;
+    display: flex;
+    flex-direction: column;
+}
+
+.center h3{
+    margin: auto;
+}
 
 
 /*===============================================================================================
@@ -635,7 +744,8 @@ nav ul li a:after{
 
 nav ul li a:hover:after {
     width: 100%;
-  }
+}
+
 
 /*===============================================================================================
     FOOTER 

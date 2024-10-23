@@ -1,6 +1,8 @@
+const caseContent = document.getElementsByClassName("caseContent");
+const tabLinks = document.getElementsByClassName("tablinks");
+
+
 function openTab(evt, tabName) {
-    const caseContent = document.getElementsByClassName("caseContent");
-    const tabLinks = document.getElementsByClassName("tablinks");
 
     // Loop gennem caseContent og set display "none")
     for (let i = 0; i < caseContent.length; i++) {
@@ -21,6 +23,3 @@ function openTab(evt, tabName) {
 
 // Automatic åben den første tab når siden indlæses
 document.getElementById("defaultOpen").click();
-
-// Credit: W3 schools - https://www.w3schools.com
-// Modificeret fra det oprindelige eksempel med få ændringer/optimeringer
