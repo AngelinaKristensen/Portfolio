@@ -296,7 +296,7 @@ body {
     color: var(--CreamWhite);
 }
 
-.caseFront{
+.caseFront, .case{
     display: flex;  
     padding: 8rem;
     justify-content: space-between;
@@ -306,21 +306,32 @@ body {
     background-color: var(--DarkerGreen);
 }
 
-.caseFront div:first-child{
+.case:nth-of-type(2){
+    background-color: #e9ece5;
+}
+
+.caseFront div:first-child, .case div:first-child{
     display: flex;  
     flex-direction: column;
 }
 
-.casesFront h2{
+.casesFront h2, .cases h2{
     padding-top: 5rem;
 }
 
-.caseFront img{
+.caseFront img, .case img{
     height: 28rem;
 }
 
 .caseFront h3{
     color: var(--LightGreen);
+}
+
+.case h3{
+    color: var(--DarkerGreen);
+}
+
+.caseFront h3, .case h3{
     font-size: 2.5rem;
     padding-bottom: 1rem;
     font-weight: 500;
@@ -328,28 +339,28 @@ body {
     font-family: var(--Mont);
 }
 
-.caseFront p{
+.caseFront p, .case p{
     margin: 0;
     font-size: 2rem;
     font-weight: 300;
 }
 
-.caseFront ul{
+.caseFront ul, .case ul{
     padding: 2rem 0 0 0;
 }
 
-.caseFront li{
+.caseFront li, .case li{
     margin: 0;
     list-style: none;
     font-size: 1.5rem;
     padding: 1rem 0;
 }
 
-.caseFront li span{
+.caseFront li span, .case li span{
     font-weight: 700;
 }
 
-.caseBtn{
+.Btn{
     background-color: var(--LightGreen);
     text-decoration: none;
     color: var(--DarkerGreen);
@@ -359,7 +370,51 @@ body {
     padding: .5rem;
     width: 14rem;
     text-align: center;
-    margin-top: auto; 
+    margin-top: auto;
+    border: none; 
+}
+
+.caseBtn2{
+    background-color: var(--DarkGreen);
+    color: var(--CreamWhite);
+}
+
+#npBtn{
+    padding: 0 8rem 4rem 8rem;
+    background-color: var(--DarkGreen);
+}
+
+#npBtn a{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: auto;
+    gap: .5rem;
+    width: 20rem;
+    color: var(--CreamWhite);
+    border-radius: 5rem;
+    text-decoration: none;
+    font-size: 1.5rem;
+}
+
+#npBtn a:hover i{
+    animation-name: bounce;
+    animation-duration: 1s;
+    animation-iteration-count: infinite;
+}
+
+@keyframes bounce {
+    0%   { 
+        transform: translateX(0); 
+    }
+
+    50%  { 
+        transform: translateX(20px); 
+    }
+
+    100% { 
+        transform: translateX(0); 
+    }
 }
 
 
@@ -369,13 +424,55 @@ body {
 
 
 
-/* CASE GALLERY
-======================================================================================= */
 /* CASE HEADER + TABS
 ======================================================================================= */
+
+/* Style the tab */
+.caseTab {
+    overflow: hidden;
+    background-color: var(--DarkGreen);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Style the buttons that are used to open the tab content */
+.caseTab button {
+    background-color: inherit;
+    font-family: var(--Mont);
+    color: var(--CreamWhite);
+    text-transform: uppercase;
+    /* float: left; */
+    border: none;
+    outline: none;
+    cursor: pointer;
+    padding: 14px 16px;
+    transition: 0.3s;
+}
+  
+  /* Change background color of buttons on hover */
+.caseTab button:hover {
+    background-color: #173834;
+}
+  
+  /* Create an active/current tablink class */
+.caseTab button.active {
+    background-color: var(--DarkerGreen);
+}
+
+.caseHeader{
+    background-color: var(--DarkGreen);
+    padding: 2rem 20rem;
+}
+  
+
 /* CASE INDIVIDUAL
 ======================================================================================= */
 
+.caseContent {
+  display: none;
+  padding: 2rem 20rem;
+}
 
 
 
@@ -386,6 +483,97 @@ body {
 /*===============================================================================================
     CONTACT 
 ===============================================================================================*/
+
+.contact{
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.contact div{
+    margin: 4rem 2rem;
+    padding: 1rem;
+}
+
+.contact div h1{
+    font-family: var(--Mont);
+    font-size: 3rem;
+    color: var(--DarkerGreen);
+    margin-bottom: 5rem;
+}
+
+.contact li, .contact p{
+    list-style: none;
+    font-size: 1.5rem;
+}
+
+.contact li{
+    padding: .5rem 0;
+}
+
+.contact li a{
+    text-decoration: none;
+    color: var(--DarkGrey);
+}
+
+.contact li a:hover{
+    color: var(--DarkGreen);
+    text-decoration: underline;
+}
+
+.contact li a i{
+    padding-right: 1rem;
+    color: var(--DarkGreen);
+}
+
+.contact ul{
+    padding: 0;
+    font-family: var(--SS3);
+}
+
+.contact form{
+    /* background-color: #e9ece5; */
+    box-shadow: 0px 0px 20px var(--LightGreen);
+    font-family: var(--Mont);
+    padding: 4rem;
+    margin: 4rem;
+}
+
+.contact input, .contact textarea{
+    border: none;
+    width: 35rem;
+    height: 2.5rem;
+    margin: 1rem 0;
+    transition: all .2s;
+    background-color: #e9ece5;
+}
+
+.contact textarea{
+    resize: vertical;
+}
+
+.contact #Besked{
+    height: 10rem;
+    padding-bottom: 8rem;
+    word-wrap: break-word;
+    word-break: break-all;
+}
+
+.contact input:focus-visible, .contact textarea:focus-visible{
+    border-bottom: solid var(--DarkGreen);
+    background-color: white;
+    outline: 0;
+}
+
+#contactBtn{
+    background-color: var(--DarkGreen);
+    color: var(--CreamWhite);
+    width: 15rem;
+    font-size: 1.2rem;
+    font-family: var(--SS3);
+}
+
+
+
 
 /*===============================================================================================
     NAV 
@@ -408,11 +596,46 @@ nav ul{
     gap: 4rem;
 }
 
-nav ul li a{
+nav ul li a, nav ul li a:after, nav ul li a:before{
     text-decoration: none;
     color: var(--CreamWhite);
     text-transform: uppercase;
+    transition: all .2s;
+    position: relative;
 }
+
+#active a{
+    font-weight: 700;    
+}
+
+#active a:before{
+    position: absolute;    
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+    width: 100%;
+    content: '';
+    background: var(--DarkGreen);
+    height: .15rem;
+}
+
+nav ul li a:after{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+    width: 0%;
+    content: '';
+    color: transparent;
+    background: var(--CreamWhite);
+    height: .15rem;
+}
+
+nav ul li a:hover:after {
+    width: 100%;
+  }
 
 /*===============================================================================================
     FOOTER 
@@ -430,4 +653,8 @@ footer{
 footer div a{
     color: var(--CreamWhite);
     padding-left: 2rem;
+}
+
+footer div a i{
+    padding-right: .5rem;
 }
