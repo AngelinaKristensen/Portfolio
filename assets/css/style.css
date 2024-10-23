@@ -589,6 +589,59 @@ ul.breadcrumb li a:hover {
     ABOUT
 ===============================================================================================*/
 
+.aboutPage{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 2rem 30rem 5rem 30rem;
+}
+
+.aboutPage p{
+    font-size: 1.2rem;
+    margin: 0;
+}
+
+.aboutPage img:first-of-type{
+    border-radius: 50%;
+    width: 60%;
+    border-width: 1.2rem;
+    border-color: var(--DarkGreen);
+    border-style: double;
+}
+
+.aboutPage img:last-of-type{
+    
+    width: 20%;
+    margin: 7rem 0 1rem 0;
+  
+}
+
+.aboutPage h1{
+    font-family: var(--Mont);
+    font-size: 3rem;
+    padding: 2rem 0 .5rem 0;
+    font-weight: 500;
+}
+
+.aboutPage h1 span{
+    color: var(--DarkGreen);
+    font-weight: 700;
+}
+
+.aboutPage h2{
+    font-family: var(--Mont);
+    color: var(--DarkerGreen);
+    margin: 0;
+    padding: 2rem 0 .5rem 0;
+    font-size: 1.6rem;
+}
+
+.aboutPage h2:last-of-type{
+    padding: 5rem 0 .5rem 0;
+    color: var(--DarkGreen);
+    text-align: center;
+}
+
 /*===============================================================================================
     CONTACT 
 ===============================================================================================*/

@@ -14,7 +14,7 @@ function openTab(evt, tabName) {
         tabLinks[i].className = tabLinks[i].className.replace(" active", "");
     }
 
-    // Hvis den aktive tab 
+    // Vis den aktive tab 
     document.getElementById(tabName).style.display = "block";
 
     // Tilføj "active" class for at highlighte den tab
@@ -22,4 +22,4 @@ function openTab(evt, tabName) {
 };
 
 // Automatic åben den første tab når siden indlæses
-document.getElementById("defaultOpen").click();
+document.querySelector("#defaultOpen").click();
