@@ -1,11 +1,20 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<svg id="Layer_3" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1112 611">
+<svg xmlns="http://www.w3.org/2000/svg" version="1.1" viewBox="0 0 847 611">
   <defs>
     <style>
       .cls-1 {
         fill: #386862;
+        stroke: #386862;
+        stroke-miterlimit: 10;
       }
     </style>
   </defs>
-  <path class="cls-1" d="M858.93,10.69s-59.54,188.2-189.53,196.99c-129.99,8.79-150.95-51.87-207.98-82.65-57.03-30.77-84.7-40.44-139.21-26.38s-86.38,61.54-88.89,127.49c0,0-3.35,72.1-11.74,104.63-21.12,81.92-68.59,226.84-204.54,275.19V10.69h841.89Z"/>
+  <!-- Generator: Adobe Illustrator 28.7.1, SVG Export Plug-In . SVG Version: 1.2.0 Build 142)  -->
+  <g>
+    <g id="Layer_1">
+      <g id="Layer_3">
+        <path class="cls-1" d="M841.9,0s-59.5,188.2-189.5,197-151-51.9-208-82.7-84.7-40.4-139.2-26.4-86.4,61.5-88.9,127.5c0,0-3.4,72.1-11.7,104.6C183.5,401.9,136,546.8.1,595.2V0h841.9-.1Z"/>
+      </g>
+    </g>
+  </g>
 </svg>
