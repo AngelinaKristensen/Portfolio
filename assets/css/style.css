@@ -34,7 +34,7 @@ body {
     background-color: var(--CreamWhite);
 }
 
-.skills h2, .focusFront h2, .casesFront h2{
+.skills h2, .focusFront h2, .casesFront h2, .introFront h2{
     font-family: var(--Mont);
     font-size: 2rem;
     font-weight: 500;
@@ -186,13 +186,6 @@ body {
 /* SKILLS
 ======================================================================================= */
 
-
-
-.logoText{
-    text-align: center;
-    font-family: var(--Mont);
-
-}
 
 .skill{
     color: var(--CreamWhite);
@@ -417,6 +410,13 @@ body {
     }
 }
 
+
+
+.introFront{
+    padding: 0 2rem 2rem 2rem;
+    background-color: var(--DarkGreen);
+    color: var(--CreamWhite);
+}
 
 /*===============================================================================================
     CASES
@@ -651,12 +651,12 @@ ul.breadcrumb li a:hover {
     justify-content: space-evenly;
 }
 
-.contact div{
+.contact article{
     margin: 4rem 2rem;
     padding: 1rem;
 }
 
-.contact div h1{
+.contact article h1{
     font-family: var(--Mont);
     font-size: 3rem;
     color: var(--DarkerGreen);
@@ -931,7 +931,7 @@ footer div a i{
         font-size: 5rem;
     }
 
-    .skills h2, .focusFront h2, .casesFront h2{
+    .skills h2, .focusFront h2, .casesFront h2, .introFront h2{
         font-size: 1.5rem;
     }
     .skillsContainer{
