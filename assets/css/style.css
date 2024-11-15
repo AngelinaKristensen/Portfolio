@@ -53,25 +53,24 @@ body {
 ===============================================================================================*/
 
 .landingHeader{
-    height: 92.5vh;
+    position: relative;
 }
 
 .frontVectorLeft{
     top: 0;
-    left: 0;
+    left: -1%;
     position: absolute;
+    width: 60rem; 
     z-index: 10;
-    /* height: 75%; */
-    width: 60rem;    
 }
 
 .frontVectorRight{
-    bottom: 0;
+    top: 1%;
     right: 0;
     position: absolute;
-    z-index: 10;
-    /* height: 100%; */
-    width: 65rem;   
+    height: 99%;
+    z-index: -1;
+    width: 80rem;   
 }
 
 .profileImg{
@@ -95,7 +94,6 @@ body {
     text-transform: uppercase;
     padding: 0 3rem;
     margin: 0;
-    position: relative;
 }
 
 /* BUBBLES
@@ -199,7 +197,7 @@ body {
 
 .introFrontContent{
     font-size: 1.2rem;
-    padding: 1rem 10rem;
+    padding: 1rem 25rem;
 }
 
 /* SKILLS
@@ -208,7 +206,6 @@ body {
 
 .skill{
     color: var(--CreamWhite);
-    height: 6.5rem;
     height: 6.5rem;
     width: 17rem;
 }
@@ -759,6 +756,10 @@ nav{
     z-index: 1000;
 }
 
+nav .icon{
+    display: none;
+}
+
 nav ul{
     display: flex;
     list-style: none;
@@ -853,17 +854,19 @@ footer div a i{
         height: 40vh;
     }
 
-    .landingHeader{
-        height: 90Vh;
-    }
     .frontVectorLeft{
-        height: 70%;
-        width: 50rem;    
+        height: auto;
+        top: 0;
+        left: 0;
+        width: 45rem;
     }
     .frontVectorRight{
-        /* height: 100%; */
-        width: 50rem;   
+        width: 55rem;
+        top: 1%;
+        right: 0;
+        z-index: -1;
     }
+
     .profileImg{
         bottom: 7%;
         right: 7%;
@@ -871,6 +874,15 @@ footer div a i{
     }
     .name{
         font-size: 6rem;
+        padding: 2rem;
+    }
+
+    .introFront{
+        padding: 0 7rem 2rem 7rem;
+    }
+    .introFrontContent{
+        font-size: 1.3rem;
+        padding: 1rem 10rem;
     }
 
     .divLine{
@@ -903,7 +915,6 @@ footer div a i{
 
 }
 
-
 @media screen and (max-width: 1400px) {    
     .bubble1{ 
         width: 7rem;
@@ -921,16 +932,11 @@ footer div a i{
         height: 40vh;
     }
 
-    .landingHeader{
-        height: 89.7Vh;
-    }
     .frontVectorLeft{
-        height: 70%;
-        width: 40rem;    
+        width: 40rem;
     }
     .frontVectorRight{
-        /* height: 100%; */
-        width: 40rem;   
+        width: 45rem;
     }
     .profileImg{
         bottom: 7%;
@@ -939,6 +945,11 @@ footer div a i{
     }
     .name{
         font-size: 5rem;
+        padding: 2rem;
+    }
+
+    .introFront{
+        padding: 0 5rem 2rem 5rem;
     }
 
     .skills h2, .focusFront h2, .casesFront h2, .introFront h2{
@@ -1019,3 +1030,548 @@ footer div a i{
     }
 
 }
+
+@media screen and (max-width: 1200px) {    
+    .bubble1{ 
+        width: 6rem;
+    }
+    .bubble2{ 
+        width: 10rem; 
+    }
+    .bubble3{ 
+        width: 11rem;
+    }
+    .bubble4{ 
+        width: 7.5rem;
+    }
+    .bubbles {
+        height: 40vh;
+    }
+
+    .frontVectorLeft{
+        width: 40rem;
+    }
+    .frontVectorRight{
+        width: 60%;
+    }
+
+    .profileImg{
+        bottom: 10%;
+        right: 10%;
+        height: 25rem;
+    }
+    .name{
+        font-size: 5rem;
+        padding: 2rem;
+    }
+
+    .introFront{
+        padding: 0 2rem 2rem 2rem;
+    }
+    .introFrontContent{
+        font-size: 1.2rem;
+    }
+
+    .skills h2, .focusFront h2, .casesFront h2, .introFront h2{
+        font-size: 1.5rem;
+    }
+    .divLine{
+        height: 30rem;
+    }
+    
+    .caseHeader{
+        padding: 4rem 6rem 2rem 6rem;
+    }
+
+    .caseHeader img{
+        height: 20rem;
+    }
+
+    ul.breadcrumb {
+        padding: 2rem 6rem 0 6rem;
+    }
+    .demo{
+        font-size: 1.2rem;
+        width: 50%;        
+    }
+
+    .caseContent {
+        padding: 2rem 8rem 5rem 8rem;
+    }
+
+    .aboutPage{
+        padding: 2rem 10rem 5rem 10rem;
+    }
+
+    .contact{
+        flex-direction: column;
+    }
+    .contact article{
+        margin: 2rem 1rem;
+        padding: 0;
+        text-align: center;
+    }
+    .contact article h1{
+        font-size: 3rem;
+        margin-bottom: 2rem;
+    }
+    .contact li, .contact p{
+        font-size: 1.2rem;
+    }
+    .contact form{
+        box-shadow: 0px 0px 10px var(--LightGreen);
+        padding: 5rem;
+        margin: 2rem 10rem;
+    }
+    .contact input, .contact textarea{
+        width: 100%;
+    }
+    .contact #Besked{
+        height: 5rem;
+    }
+    #contactBtn{
+        width: 10rem;
+        font-size: 1rem;
+    }
+
+}
+
+@media screen and (max-width: 1000px) { 
+    .bubble1, .bubble2, .bubble3, .bubble4{
+        font-size: 1.2rem;
+        box-shadow: 0px 5px 10px var(--DarkGreen);
+    }
+    
+    .bubble1{ 
+        width: 6rem;
+        left: 35%;  
+    }
+    .bubble2{ 
+        width: 10rem;
+        left: 65%; 
+    }
+    .bubble3{ 
+        width: 11rem;
+        left: 5%;
+    }
+    .bubble4{ 
+        width: 7.5rem;
+        left: 42%;
+    }
+    .bubbles {
+        height: 40vh;
+    }
+
+    .frontVectorLeft{
+        width: 35rem;
+    }
+    .frontVectorRight{
+        width: 50%;
+    }
+
+    .profileImg{
+        bottom: 15%;
+        right: 5%;
+        height: 25rem;
+    }
+    .name{
+        font-size: 4rem;
+        padding: 2rem;
+    }
+
+    .introFront{
+        padding: 0 2rem 2rem 2rem;
+    }
+
+    .focusFront{
+        padding: 0 10rem .5rem 10rem;
+    }
+    .focusFront div:first-of-type{
+        display: flex;
+        flex-direction: column;
+    }
+    .focusFront ul{
+        padding: 0;
+    }
+    .focusFront li{
+        list-style: none;
+        font-size: 1rem;
+    }
+    .focusFront li:last-child{
+        padding: 1.5rem;
+    }
+    .focusFront li:first-child{
+        font-size: 1.5rem;
+        padding: 0 1.5rem;
+    }
+    .divLine{
+        border-top: .15rem solid var(--DarkGreen);
+        width: 15rem;
+        height: 0;
+        margin: .5rem 2rem 2rem 2rem;
+        align-self: center;
+    }
+    
+    .caseHeader{
+        padding: 4rem 5rem 2rem 5rem;
+    }
+
+    .caseHeader img{
+        height: 18rem;
+    }
+
+    ul.breadcrumb {
+        padding: 2rem 5rem 0 5rem;
+    }
+
+    .caseContent {
+        padding: 2rem 6rem 5rem 6rem;
+    }
+
+    .aboutPage{
+        padding: 2rem 8rem 5rem 8rem;
+    }
+    
+    .contact form{
+        margin: 2rem 8rem;
+    }
+
+}
+
+@media screen and (max-width: 750px) { 
+    .bubble1, .bubble2, .bubble3, .bubble4{
+        font-size: 1.2rem;
+        box-shadow: 0px 5px 10px var(--DarkGreen);
+    }
+    
+    .bubble1{ 
+        width: 6rem;
+        left: 40%;  
+    }
+    .bubble2{ 
+        width: 10rem;
+        left: 75%; 
+    }
+    .bubble3{ 
+        width: 11rem;
+        left: 5%;
+    }
+    .bubble4{ 
+        width: 7.5rem;
+        left: 50%;
+    }
+
+    .profileImg{
+        height: 20rem;
+    }
+    .name{
+        font-size: 3.5rem;
+    }
+
+    .introFrontContent{
+        font-size: 1.2rem;
+        padding: 1rem 6rem;
+    }
+    
+    .focusFront{
+        padding: 0 6rem .5rem 6rem;
+    }
+
+    .caseFront, .case{ 
+        padding: 4rem; 
+    }
+
+    .caseFront img, .case img, .caseHeader img{
+        height: 15rem;
+    }
+    .caseFront h3, .case h3{
+        font-size: 2rem;
+        padding-bottom: 1rem;
+    }
+    .caseFront p, .case p{
+        font-size: 1.2rem;
+    }
+    .caseFront ul, .case ul{
+        padding: .2rem 0 0 0;
+        margin: 0;
+    }
+    .caseFront li, .case li{
+        font-size: 1rem;
+    }
+    .Btn{
+        font-size: 1rem;
+        padding: .2rem;
+        width: 10rem;
+        margin: 1rem 0;
+    }
+    #npBtn{
+        padding: 0 2rem 2rem 2rem;
+    }
+    #npBtn a{
+        font-size: 1rem;
+    }
+
+    
+    .caseHeader{
+        padding: 4rem 5rem 2rem 5rem;
+    }
+
+    .caseHeader img{
+        height: 18rem;
+    }
+
+    ul.breadcrumb {
+        padding: 2rem 5rem 0 5rem;
+    }
+
+    .caseContent {
+        padding: 2rem 6rem 5rem 6rem;
+    }
+
+    .aboutPage{
+        padding: 2rem 5rem 5rem 5rem;
+    }
+    .aboutPage p{
+        font-size: 1.2rem;
+    }
+    .aboutPage img:first-of-type{
+        width: 60%;
+        border-width: 1rem;
+    }
+    .aboutPage img:last-of-type{
+        width: 30%;
+        margin: 2rem 0 1rem 0;
+    }
+    .aboutPage h1{
+        font-size: 1.8rem;
+    }
+    .aboutPage h2{
+        font-size: 1.5rem;
+    }
+    .aboutPage h2:last-of-type{
+        padding: 4rem 0 .5rem 0;
+    }
+
+    .contact form{
+        margin: 2rem 3rem;
+    }
+
+}
+
+@media screen and (max-width: 450px) {   
+    .bubble1, .bubble2, .bubble3, .bubble4{
+        font-size: 1rem;
+    } 
+
+    .bubble1{ 
+        width: 5rem;
+        top: 7%;
+        left: 40%;
+    }
+    .bubble2{ 
+        width: 7.5rem; 
+        top: 12%;
+        left: 95%;
+    }
+    .bubble3{ 
+        width: 7.5rem;
+        top: 30%;
+        left: 10%;
+    }
+    .bubble4{ 
+        width: 6rem;
+        top: 70%;
+        left: 5%;
+    }
+    .bubbles {
+        width: 65%;
+        height: 50vh;
+        margin-bottom: 7rem;
+        z-index: 100;
+        position: relative;
+    }
+
+    .frontVectorLeft{
+        height: auto;
+        top: 0;
+        left: 0;
+        width: 24rem;
+    }
+    .frontVectorRight{
+        width: 110%;
+        top: 18%;
+        right: 0;
+        z-index: -1;
+        height: 85%;
+    }
+    .profileImg{
+        bottom: 28%;
+        right: 3%;
+        height: 15rem;
+    }
+    .name{
+        font-size: 3rem;
+        margin-bottom: 1rem;
+        color: var(--CreamWhite);
+        text-align: center;
+    }
+
+    nav{
+        padding: 0rem;
+    }
+    nav .icon{
+        color: var(--CreamWhite);
+        font-size: 1.5rem;
+        padding: .70rem 2rem;
+        margin: 0;
+        display: block;
+        text-align: right;
+    }
+    .navLinks{
+        display: none;
+    }
+    nav ul{
+        flex-direction: column;
+        justify-content: flex-start;
+        gap: 3rem;
+        height: 100vh;
+    }
+    
+    .introFront{
+        padding: 0 2rem 2rem 2rem;
+    }
+    .introFrontContent{
+        font-size: 1rem;
+        padding: 1rem .5rem;
+    }
+
+    .skills h2, .focusFront h2, .casesFront h2, .introFront h2{
+        font-size: 1.5rem;
+    }
+    .skillsContainer{
+        font-size: 1rem;
+        padding: 4rem 0;
+    }
+    .skill{
+        height: 4.5rem;
+        width: 10rem;
+    }
+  
+    .focusFront{
+        padding: 0 .5rem .5rem .5rem;
+    }
+
+    .caseFront, .case{ 
+        padding: 2rem;
+        flex-direction: column-reverse;
+    }
+    .caseFront img, .case img, .caseHeader img{
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        padding-bottom: 1.5rem;
+    }
+
+    footer{
+        flex-direction: column-reverse;
+        padding: 2rem;
+        gap: 1rem;
+        font-size: 1rem;
+    }
+
+    .aboutPage{
+        padding: 2rem 2rem 5rem 2rem;
+    }
+    .aboutPage p{
+        font-size: 1rem;
+    }
+    .aboutPage img:first-of-type{
+        width: 85%;
+        border-width: .5rem;
+    }
+    .aboutPage img:last-of-type{
+        width: 50%;
+        margin: 2rem 0 1rem 0;
+    }
+    .aboutPage h1{
+        font-size: 1.8rem;
+    }
+    .aboutPage h2{
+        font-size: 1.2rem;
+    }
+    .aboutPage h2:last-of-type{
+        padding: 2rem 0 .5rem 0;
+    }
+
+    .contact article{
+        margin: 2rem 1rem;
+        padding: 0;
+        text-align: center;
+    }
+    .contact article h1{
+        font-size: 2rem;
+        margin-bottom: 2rem;
+    }
+    .contact li, .contact p{
+        font-size: 1rem;
+    }
+    .contact form{
+        box-shadow: 0px 0px 10px var(--LightGreen);
+        padding: 2rem;
+        margin: 1rem;
+    }
+
+    ul.breadcrumb {
+        padding: 1rem 2rem 0 2rem;
+    }
+    ul.breadcrumb li {
+        font-size: 1rem;
+    }
+    .caseTab {
+        flex-direction: column;
+    }
+    .caseHeader{
+        flex-direction: column-reverse;
+        padding: 2rem 2rem .5rem 2rem;
+        gap: 1rem;
+    }
+    .caseHeader h1{
+        font-size: 1.5rem;
+    }
+    .caseHeader h2{
+        font-size: 1.2rem;
+    }
+    .caseHeader p{
+        font-size: 1rem;
+    }
+    .demo{
+        margin: 2rem auto;
+        font-size: 1rem;
+        width: 75%;        
+    }
+    .caseContent {
+        padding: 2rem 2rem 5rem 2rem;
+    }
+    .caseContent h3{
+        font-size: 1.2rem;
+    }
+    .caseContent p, .caseContent li{
+        font-size: 1rem;
+    }
+    .caseContent li{
+        padding: .5rem 0;
+    }
+    .caseContent img{
+        padding: 1rem 0;
+        width: 100%;
+    }
+    .center{
+        padding: 0 1rem;
+        display: flex;
+        flex-direction: column;
+    }
+    .center h3{
+        margin: auto;
+    }
+}
+
